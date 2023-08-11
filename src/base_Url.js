@@ -1,0 +1,1 @@
+export const baseUrl = "https://cheese-backend-ronard.onrender.com"
