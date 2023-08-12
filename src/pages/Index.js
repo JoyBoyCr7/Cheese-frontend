@@ -18,7 +18,7 @@ function Index(props){
 
     return (
         <div className="main">
-            <h2 className="header">Create a new Cheese Below</h2>
+            <h2 className="header">Create A New Cheese Below</h2>
             <Form action="/create" method="post" className="form">
                 <div className="inputs">
                     <input required type="text" name="name" placeholder="cheese name" onChange={changeState}/>
