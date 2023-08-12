@@ -1,16 +1,22 @@
 import { Link , useLoaderData, Form} from "react-router-dom"
 
+import { useState } from "react"
+
+
+
 function Index(props){
     const cheeses = useLoaderData()
 
     return (
         <div className="main">
-            <h2 className="header">Create a new Cheese </h2>
+            <h2 className="header">Create a new Cheese Below</h2>
             <Form action="/create" method="post" className="form">
-                <input required type="text" name="name" placeholder="cheese name" />
-                <input type="text" name="countryOfOrigin" placeholder="Origin"/>
-                <input type="text" name="image" placeholder="cheese image" required/>
-                <input type="submit" value="Create Cheese"/>
+                <div className="inputs">
+                    <input required type="text" name="name" placeholder="cheese name" />
+                    <input type="text" name="countryOfOrigin" placeholder="Origin"/>
+                    <input type="text" name="image" placeholder="cheese image" required/>
+                    <input type="submit" value="Create Cheese"/>
+                </div>
             </Form>
             <div className="allcheese">
                 {cheeses.map((cheese, index) => <div key={index} className="cheese">

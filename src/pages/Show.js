@@ -11,7 +11,7 @@ function Show(props){
 
             <h2>Update {cheese.name}</h2>
             <Form action={`/update/${cheese._id}`} method="put">
-                <input type="text" name="name" placeholder="cheese name"/>
+                <input required type="text" name="name" placeholder="cheese name"/>
                 <input type="text" name="countryOfOrigin" placeholder="Origin"/>
                 <input type="text" name="image" placeholder="cheese image"/>
                 <input type="submit" value="update Cheese"/>
