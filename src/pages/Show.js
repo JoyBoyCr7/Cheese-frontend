@@ -19,7 +19,7 @@ function Show(props){
         
     }
 
-    return <div>
+    return <div className="show">
             <h1>{cheese.name}</h1>
             <img src={cheese.image} alt={cheese.name}/>
             <h1>{cheese.countryOfOrigin}</h1>
